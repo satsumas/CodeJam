@@ -1,5 +1,3 @@
 #CodeJam
 
-Solutions in Python to algorithms problems from Google Code Jam.
-
-Problems taken from [previous Code Jam rounds](https://code.google.com/codejam/contests.html).
+Solutions to algorithms problems from [ rounds of Google Code Jas](https://code.google.com/codejam/contests.html).
