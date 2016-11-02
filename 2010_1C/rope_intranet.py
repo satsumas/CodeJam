@@ -13,16 +13,6 @@ for line in lines:
     line = line.strip('\n')
     stripped_lines.append(line)
 
-
-
-"""
-line 1: number of cases, T
-line 2: number of wires in first case, N_1
-lines (3, 3 + N_1): space separated pairs Ai, Bi
-line N_1+1: number of wires in second case, N_2
-lines (N_1 + 1, N_1 + 1 + N_2): space separated pairs Ai, Bi
-
-"""
 list_of_dicts = []
 
 i = 1
@@ -40,7 +30,7 @@ while True:
 def number_intersections(my_dict):
     counter = 0
     for key in my_dict:
-        for other_key in [x for x in my_dict if x != key]:
+        for other_key in [x for x in my_dict if x != key]
             if other_key < key:
                 if my_dict[other_key] > my_dict[key]:
                     counter += 1
@@ -52,10 +42,7 @@ def number_intersections(my_dict):
                 else:
                     pass
     return counter
-"""
-for case in list_of_dicts:
-    print number_intersections(case)
-"""
+
 f = open("rope_intranet_solutions.txt", "w")
 
 for i in range(len(list_of_dicts)):
